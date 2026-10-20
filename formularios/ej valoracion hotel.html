@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body{
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+<form action="" method="post">
+
+    <label>Habitaciones</label>
+    <br>
+    <input type="radio" name="habitaciones" value="1" id="h1"><label for="h1">1</label>
+    <input type="radio" name="habitaciones" value="2" id="h2"><label for="h2">2</label>
+    <input type="radio" name="habitaciones" value="3" id="h3"><label for="h3">3</label>
+    <input type="radio" name="habitaciones" value="4" id="h4"><label for="h4">4</label>
+    <input type="radio" name="habitaciones" value="5" id="h5"><label for="h5">5</label>
+    <br><br>
+
+    ¿De que tipo de viaje se trataba?
+    <form action="tipo">
+        <br>
+        <input name="puesto" type="radio"   value="Negocios"/> Negocios
+        <input name="puesto" type="radio"   value="Vacaciones"/> Vacaciones
+    </form>
+    <br>
+
+   ¿Con quien viajabas? <form action="prueba.php" method="get">
+    <br>
+    <input name="puesto" type="radio"   value="Familia"/> Familia
+    <input name="puesto" type="radio"   value="Amigos"/> Amigos
+    <input name="puesto" type="radio"   value="Pareja"/> Pareja
+    <input name="puesto" type="radio"   value="Solo"/>Solo
+</form>
+    <br>
+
+    ¿Como describirias el hotel?  <form action="Hotel" method="get">
+    <input name="De lujo" type="checkbox" /> De lujo
+    <input name="Buenas vistas" type="checkbox" /> Buenas vistas
+    <input name="Romantico" type="checkbox" /> Romantico
+    <input name="Tranquilo" type="checkbox" /> Tranquilo
+    <input name="Adecuado para niños" type="checkbox" /> Adecuado para niños
+    <input name="Buen precio" type="checkbox" /> Buen precio
+    <input name="De alta tecnologia" type="checkbox" /> De alta tecnologia
+    <br>
+    <br>
+    ¿Como de comoda era la cama?
+    <form action="Comodidad">
+        <br>
+        <input type="radio" name="Comodidad" value="Muy comodos"/> Muy comodos
+        <input type="radio" name="Comodidad" value=" comodos"/>  comodos
+        <input type="radio" name="Comodidad" value="ni facil ni dificil"/> ni facil ni dificil
+        <input type="radio" name="Comodidad" value="incomodos"/> incomodos
+        <input type="radio" name="Comodidad" value="muy incomodos"/> muy incomodos
+        <br>
+        <br>
+Añade mas detalles para ayudar a otros usuarios
+        <br><br>
+        <textarea name="Habitaciones" id="Habitaciones" cols="60" rows="30" placeholder="Escribe tu reseña"></textarea>
+        <br>
+        <form action="https://search.brave.com/search" method="get">
+
+            <input type="submit" value="Publicar">
+    </form>
+
+</body>
+
+</html>
